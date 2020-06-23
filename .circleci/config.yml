@@ -6,10 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: What is what
+          name: Working with AWS CLI
           command: |
-            ls -lrt
-            java -version
-            uname -a
-            df
-            curl ipinfo.io/ip
+            curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+            unzip awscli-bundle.zip
+            ./awscli-bundle/install -b ~/bin/aws
+             aws s3 ls s3://
