@@ -12,4 +12,4 @@ jobs:
             java -version
             uname -a
             free -m
-            df -sh
+            df
