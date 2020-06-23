@@ -11,5 +11,5 @@ jobs:
             ls -lrt
             java -version
             uname -a
-            free -m
+            df
             curl ipinfo.io/ip
