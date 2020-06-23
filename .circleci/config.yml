@@ -12,5 +12,4 @@ jobs:
             java -version
             uname -a
             free -m
-            df
-            cat README.md
+            curl ipinfo.io/ip
