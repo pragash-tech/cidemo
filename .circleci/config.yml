@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - checkout
+      - run:
+          name: What is what
+          command: |
+            ls -lrt
+            java -version
+            uname -a
+            free -m
+            du -sch
