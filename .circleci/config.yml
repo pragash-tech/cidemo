@@ -11,7 +11,6 @@ jobs:
             curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
             unzip awscli-bundle.zip
             ./awscli-bundle/install -b ~/bin/aws
-            AWS_REGION=us-east-1c
             aws s3 ls s3://
             echo "listing S3 Buckets...."
             cat projects/copytoec2.txt
