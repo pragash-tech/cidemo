@@ -15,3 +15,7 @@ jobs:
             aws s3 ls s3://
             echo "listing S3 Buckets...."
             cat projects/copytoec2.txt
+            aws ec2 describe-instances \
+            --filters Name=instance-type,Values=t2.micro \
+            --query Reservations[*].Instances[*].[InstanceId] \
+            --output text
