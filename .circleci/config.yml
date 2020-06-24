@@ -14,3 +14,4 @@ jobs:
             AWS_REGION=us-east-1
             aws s3 ls s3://
             echo "listing S3 Buckets...."
+            cat projects/copytoec2.txt
